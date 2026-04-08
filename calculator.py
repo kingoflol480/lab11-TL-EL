@@ -30,6 +30,7 @@ def logarithm(a, b):
 def exponent(a, b): 
     return a**b
 
-# hi
-
-# new
+def square_root(a): 
+    if a < 0:
+        raise ValueError("Invalid argument for square root")
+    return math.sqrt(a)
