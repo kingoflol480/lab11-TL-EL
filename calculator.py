@@ -24,7 +24,7 @@ def divide(a, b):
 def logarithm(a, b): 
     try:
         return math.log(a, b)
-    except ValueError as e:
+    except (ValueError, ZeroDivisionError) as e:
         raise ValueError("Invalid argument for logarithm") from e
 
 def exponent(a, b): 
