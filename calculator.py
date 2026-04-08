@@ -1,3 +1,4 @@
+# https://github.com/kingoflol480/lab11-TL-EL
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -12,10 +13,10 @@ def add(a, b):
 def subtract(a, b): 
     return a - b
 
-def multiply(a, b): 
+def mul(a, b): 
     return a * b
 
-def divide(a, b): 
+def div(a, b): 
     try:
         return a / b
     except ZeroDivisionError:
@@ -27,7 +28,7 @@ def logarithm(a, b):
     except (ValueError, ZeroDivisionError) as e:
         raise ValueError("Invalid argument for logarithm") from e
 
-def exponent(a, b): 
+def exp(a, b): 
     return a**b
 
 def square_root(a): 
