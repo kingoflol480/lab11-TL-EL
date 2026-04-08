@@ -34,3 +34,6 @@ def square_root(a):
     if a < 0:
         raise ValueError("Invalid argument for square root")
     return math.sqrt(a)
+
+def hypotenuse(a, b): 
+    return math.hypot(a, b) 
