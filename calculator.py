@@ -16,24 +16,25 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b): 
-    if b == 0:
+    try:
+        return a / b
+    except ZeroDivisionError:
         raise ZeroDivisionError("Cannot divide by zero")
-    return a/b
 
 def logarithm(a, b): 
-    if b <= 0 or b == 1:
-        raise ValueError("Invalid base for logarithm")
-    if a <= 0:
-        raise ValueError("Invalid argument for logarithm")
-    return math.log(a,b)
+    try:
+        return math.log(a, b)
+    except ValueError as e:
+        raise ValueError("Invalid argument for logarithm") from e
 
 def exponent(a, b): 
     return a**b
 
 def square_root(a): 
-    if a < 0:
-        raise ValueError("Invalid argument for square root")
-    return math.sqrt(a)
+    try:
+        return math.sqrt(a)
+    except ValueError as e:
+        raise ValueError("Invalid argument for square root") from e
 
 def hypotenuse(a, b): 
     return math.hypot(a, b) 
