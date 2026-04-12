@@ -1,4 +1,7 @@
 # https://github.com/kingoflol480/lab11-TL-EL
+#Partner 1: Tommy L
+#Partner 2: Edward L
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
