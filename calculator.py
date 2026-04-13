@@ -26,6 +26,8 @@ def div(a, b):
         raise ZeroDivisionError("Cannot divide by zero")
 
 def logarithm(a, b): 
+    if b == 1:
+        raise ValueError("Base cannot be 1")
     try:
         return math.log(a, b)
     except (ValueError, ZeroDivisionError) as e:
